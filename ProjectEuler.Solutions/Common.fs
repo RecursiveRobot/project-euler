@@ -1,14 +1,14 @@
 ﻿module Common
 
-let getFactors a =
-    let rec getFactorsImp acc curr div =
+let getPrimeFactors a =
+    let rec getPrimeFactorsImp acc curr div =
         match curr with
         | 1L -> acc
         | n -> 
             if curr % div = 0L then
-                getFactorsImp (div::acc) (curr/div) div
+                getPrimeFactorsImp (div::acc) (curr/div) div
             else
-                getFactorsImp acc curr (div+1L)
+                getPrimeFactorsImp acc curr (div+1L)
 
-    getFactorsImp [] a 2L
+    getPrimeFactorsImp [] a 2L
 
