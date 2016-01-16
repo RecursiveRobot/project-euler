@@ -1,14 +1,24 @@
 ﻿module Common
 
-let getPrimeFactors a =
-    let rec getPrimeFactorsImp acc curr div =
+let primeFactors a =
+    let rec primeFactorsImp acc curr div =
         match curr with
         | 1L -> acc
         | n -> 
             if curr % div = 0L then
-                getPrimeFactorsImp (div::acc) (curr/div) div
+                primeFactorsImp (div::acc) (curr/div) div
             else
-                getPrimeFactorsImp acc curr (div+1L)
+                primeFactorsImp acc curr (div+1L)
 
-    getPrimeFactorsImp [] a 2L
+    primeFactorsImp [] a 2L
+
+let primes =
+    let rec primesImp (acc : int list) (a : int) = seq {
+        if acc |> List.forall (fun b -> a % b > 0) then
+           yield a
+           yield! primesImp (a::acc) (a+1)
+        else
+            yield! primesImp acc (a+1)
+    }
+    primesImp [] 2
 
