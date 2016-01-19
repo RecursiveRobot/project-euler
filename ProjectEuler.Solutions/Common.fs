@@ -22,3 +22,11 @@ let primes =
     }
     primesImp [] 2
 
+let factorial (n : int) =
+    let rec factorialImp acc elem = 
+        if elem = new bigint(n) then
+            acc
+        else
+           factorialImp (acc * (elem+1I)) (elem+1I)
+
+    factorialImp 1I 1I
