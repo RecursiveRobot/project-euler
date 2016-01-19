@@ -1,17 +1,18 @@
 ﻿#load "Common.fs"
 
 // This is a straight-forward multiset permutation...
-// We have 20 rights and 20 downs to pick with only the order mattering
+// We have 20 rights and 20 downs to pick, with the order mattering
 
 // So answer =
 
-//   n*2!
-// ---------
-// (n)!*(n)!
+//  (w + h)!
+// -----------
+// (w)! * (h)!
+// where w = grid width and h = grid height
 
-let latticePathsCount n =
-    (Common.factorial (2*n)) / ((Common.factorial n) * (Common.factorial n))
+let latticePathsCount w h =
+    (Common.factorial (w+h)) / ((Common.factorial w) * (Common.factorial h))
 
 let answer =
-    latticePathsCount 20
+    latticePathsCount 20 20
 
