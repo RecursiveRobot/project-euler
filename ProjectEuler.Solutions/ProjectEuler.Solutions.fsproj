@@ -67,6 +67,7 @@
     <None Include="10.fsx" />
     <None Include="11.fsx" />
     <None Include="15.fsx" />
+    <None Include="16.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
