@@ -9,4 +9,4 @@ let answer =
     |> Seq.fold (fun acc elem -> 
         match Int32.TryParse (elem |> string) with 
            | (true, value) -> acc + value
-           | _ -> acc) 0
+           | _ -> failwith "Non-numeric character found in input string") 0
