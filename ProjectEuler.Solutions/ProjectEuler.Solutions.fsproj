@@ -67,9 +67,14 @@
     <None Include="9.fsx" />
     <None Include="10.fsx" />
     <None Include="11.fsx" />
+    <None Include="12.fsx" />
+    <None Include="13.fsx" />
+    <None Include="14.fsx" />
     <None Include="15.fsx" />
     <None Include="16.fsx" />
     <None Include="17.fsx" />
+    <None Include="18.fsx" />
+    <None Include="19.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Humanizer">
