@@ -24,9 +24,9 @@ let primes =
 
 let factorial (n : int) =
     let rec factorialImp acc elem = 
-        if elem = new bigint(n) then
+        if elem = n then
             acc
         else
-           factorialImp (acc * (elem+1I)) (elem+1I)
+           factorialImp (acc * new bigint(elem+1)) (elem+1)
 
-    factorialImp 1I 1I
+    factorialImp 1I 1
