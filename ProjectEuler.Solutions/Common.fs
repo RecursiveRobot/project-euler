@@ -30,3 +30,9 @@ let factorial (n : int) =
            factorialImp (acc * new bigint(elem+1)) (elem+1)
 
     factorialImp 1I 1
+
+let factors n = seq {
+    for i in 1 .. n-1 do
+        if n % i = 0 then
+            yield i
+}
