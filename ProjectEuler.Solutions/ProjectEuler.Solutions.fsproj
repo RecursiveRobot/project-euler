@@ -77,6 +77,7 @@
     <None Include="19.fsx" />
     <None Include="20.fsx" />
     <None Include="21.fsx" />
+    <None Include="22.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Humanizer">
