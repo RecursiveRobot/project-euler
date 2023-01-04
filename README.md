@@ -4,6 +4,6 @@ Solutions to a handful of [Project Euler](https://projecteuler.net/) problems.
 
 ## Languages
 
-* [F#](/fsharp)
+* [F#](/fsharp/ProjectEuler.Solutions)
 * [Haskell](/haskell)
-* [Rust](/rust)
+* [Rust](/rust/src)
